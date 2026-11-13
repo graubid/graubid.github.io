@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Respuesta a RFPs para empresas TI · GrauBid</title>
+<meta name="description" content="Respondemos RFPs, RFIs y cuestionarios de clientes privados para empresas tecnológicas: análisis del pliego, propuesta técnica, cuestionarios de seguridad y alta en portales de proveedores.">
+<link rel="canonical" href="https://graubid.es/respuesta-rfp/">
+<meta property="og:title" content="Respuesta a RFPs para empresas TI · GrauBid">
+<meta property="og:description" content="Respondemos RFPs, RFIs y cuestionarios de clientes privados para empresas tecnológicas: análisis del pliego, propuesta técnica, cuestionarios de seguridad y alta en portales de proveedores.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://graubid.es/respuesta-rfp/">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0F254A;--navy2:#16305C;--green:#2EA670;--green-soft:#E6F4EC;--green-line:#BFE3CF;--paper:#F7F8F6;--white:#FFFFFF;--ink:#0F254A;--ink2:#3C4654;--muted:#6A7179;--line:#DDE2E0;--mint:#BFD8D5}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:'DM Sans',Arial,sans-serif;color:var(--ink);background:var(--white);line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{width:min(1120px,100% - 32px);margin-inline:auto}
+.eyebrow{font-size:14px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--green);margin:0 0 12px}
+h1,h2,h3{margin:0;line-height:1.12;font-weight:700}
+h2{font-size:clamp(28px,4vw,40px);max-width:820px}
+p{margin:0}
+.sub{font-size:clamp(17px,2vw,20px);color:var(--ink2);max-width:760px;margin-top:14px}
+section{padding:72px 0}
+@media(max-width:640px){section{padding:52px 0}}
+header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;gap:22px;height:68px}
+.logo{display:inline-flex;flex-direction:column;text-decoration:none;line-height:1;margin-right:auto}
+.logo b{font-size:26px;letter-spacing:-.5px;color:var(--navy)}
+.logo i{display:block;height:4px;width:46px;background:var(--green);border-radius:2px;margin-top:4px}
+.nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0}
+.nav ul a{text-decoration:none;font-weight:500;color:var(--ink2);font-size:15px}
+.nav ul a:hover{color:var(--navy)}
+.lang{display:flex;gap:4px;border:1px solid var(--line);border-radius:999px;padding:3px}
+.lang a{text-decoration:none;font-size:13px;font-weight:700;letter-spacing:.5px;padding:5px 10px;border-radius:999px;color:var(--muted)}
+.lang a[aria-current]{background:var(--navy);color:#fff}
+.lang a:hover:not([aria-current]){color:var(--navy)}
+.btn{display:inline-block;padding:12px 22px;border-radius:999px;font-weight:700;text-decoration:none;font-size:16px;border:2px solid transparent;transition:.15s}
+.btn-green{background:var(--green);color:#fff}
+.btn-green:hover{background:#25905f}
+.btn-ghost{border-color:var(--mint);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.08)}
+@media(max-width:860px){.nav ul,.nav .btn{display:none}}
+.hero{background:var(--navy);color:#fff;padding:96px 0 88px}
+.hero h1{font-size:clamp(38px,6.2vw,72px);letter-spacing:-1px;max-width:900px}
+.hero h1 span{color:var(--green)}
+.hero .sub{color:var(--mint);font-size:clamp(18px,2.2vw,24px);max-width:720px}
+.hero .cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:36px}
+.grid{display:grid;gap:22px;margin-top:40px}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g2{grid-template-columns:repeat(2,1fr)}
+@media(max-width:860px){.g3,.g2{grid-template-columns:1fr}}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:30px}
+.card h3{font-size:22px;margin-bottom:10px}
+.card p{color:var(--ink2);font-size:17px}
+.card .tag{font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--green);margin-bottom:8px}
+.alt{background:var(--paper)}
+.alt .card{background:#fff}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:40px}
+@media(max-width:960px){.steps{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.steps{grid-template-columns:1fr}}
+.step{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px}
+.step .k{font-size:34px;font-weight:700;color:var(--green);line-height:1}
+.step h3{font-size:19px;margin:12px 0 8px}
+.step p{font-size:15.5px;color:var(--ink2)}
+.rules{list-style:none;padding:0;margin:36px 0 0;display:grid;gap:14px;grid-template-columns:repeat(2,1fr)}
+@media(max-width:760px){.rules{grid-template-columns:1fr}}
+.rules li{display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px 22px;font-size:17px;color:var(--ink2)}
+.rules li::before{content:"";flex:none;width:12px;height:12px;border-radius:50%;background:var(--green);margin-top:8px}
+.note{display:flex;gap:16px;align-items:flex-start;background:var(--green-soft);border:1px solid var(--green-line);border-radius:18px;padding:22px 26px;margin-top:28px;font-size:17px}
+.note svg{flex:none;margin-top:3px}
+.tbl{width:100%;border-collapse:separate;border-spacing:0;margin-top:36px;border:1px solid var(--line);border-radius:16px;overflow:hidden;font-size:16px}
+.tbl th{background:var(--navy);color:#fff;text-align:left;padding:16px 18px;font-weight:700}
+.tbl td{padding:16px 18px;border-top:1px solid var(--line);vertical-align:top;color:var(--ink2)}
+.tbl td:first-child{font-weight:700;color:var(--navy);white-space:nowrap;width:22%}
+.tbl td.when{width:24%}
+@media(max-width:760px){
+ .tbl thead{display:none}
+ .tbl tr{display:block;border-top:1px solid var(--line)}
+ .tbl td{display:block;border:0;padding:8px 18px;width:auto}
+ .tbl td:first-child{padding-top:18px;font-size:18px}
+ .tbl td:last-child{padding-bottom:18px}
+ .tbl td.how::before{content:var(--lbl-how);font-weight:700;color:var(--navy)}
+ .tbl td.when::before{content:var(--lbl-when);font-weight:700;color:var(--navy)}
+}
+.final{background:var(--navy);color:#fff}
+.final h2{color:#fff}
+.final .sub{color:var(--mint)}
+.final .cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:32px}
+footer{background:#0B1C39;color:var(--mint);padding:28px 0;font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between}
+footer a{color:var(--mint)}
+
+.crumb{font-size:14px;color:var(--mint);margin-bottom:18px}
+.crumb a{color:var(--mint)}
+.faq{display:grid;gap:14px;margin-top:36px}
+.faq details{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 22px}
+.faq summary{cursor:pointer;font-weight:700;font-size:18px;color:var(--navy)}
+.faq details p{margin-top:10px;color:var(--ink2);font-size:17px}
+.related{margin-top:28px;font-size:17px}
+.related a{color:var(--green);font-weight:700}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Qué diferencia hay entre una RFP, una RFI y una RFQ?", "acceptedAnswer": {"@type": "Answer", "text": "La RFI pide información para conocer proveedores. La RFP pide una propuesta completa: solución, equipo, plan y precio. La RFQ se centra sobre todo en el precio de algo ya definido. Ayudamos con las tres."}}, {"@type": "Question", "name": "¿Firmáis un acuerdo de confidencialidad?", "acceptedAnswer": {"@type": "Answer", "text": "Sí, antes de ver nada. Muchas RFPs privadas obligan a confidencialidad con el cliente, y lo respetamos: no reutilizamos contenido entre clientes y borramos los materiales al cerrar cada oferta."}}, {"@type": "Question", "name": "¿Ponéis vosotros el precio?", "acceptedAnswer": {"@type": "Answer", "text": "No. El precio y las condiciones comerciales los decidís vosotros. Podemos ayudar a presentar el desglose de forma clara, pero la decisión es vuestra."}}, {"@type": "Question", "name": "¿Con qué plazos trabajáis?", "acceptedAnswer": {"@type": "Answer", "text": "Nos adaptamos al plazo del cliente. Cuanto antes nos llegue la RFP, más margen hay para preguntar al cliente y revisar versiones."}}, {"@type": "Question", "name": "¿También hacéis concursos públicos?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Vigilamos la Plataforma de Contratación y portales autonómicos, analizamos pliegos y redactamos memorias técnicas."}}]}</script>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="../" aria-label="GrauBid, inicio"><b>GrauBid</b><i></i></a>
+    <ul><li><a href="../#servicios">Servicios</a></li><li><a href="../bid-manager-externo/">Bid manager externo</a></li><li><a href="../respuesta-rfp/">Respuesta a RFPs</a></li></ul>
+    <a class="btn btn-green" href="#empezar">Empezar sin coste</a>
+  </div>
+</header>
+<main id="top">
+<section class="hero"><div class="wrap">
+  <p class="crumb"><a href="../">GrauBid</a> · Respuesta a RFPs</p>
+  <h1>Respuesta a RFPs<br><span>para empresas tecnológicas.</span></h1>
+  <p class="sub">Cuando un cliente privado os pide propuesta, os ayudamos a responder bien y a tiempo: RFP, RFI, cuestionarios técnicos y de seguridad. Sin parar al equipo durante días.</p>
+  <div class="cta"><a class="btn btn-green" href="#empezar">Empezar con un caso real, sin coste</a><a class="btn btn-ghost" href="https://www.linkedin.com/company/graubid/" target="_blank" rel="noopener">GrauBid en LinkedIn</a></div>
+</div></section>
+<section><div class="wrap">
+  <p class="eyebrow">Qué hacemos</p><h2>Del documento del cliente a una propuesta lista para enviar.</h2><p class="sub">Las RFPs privadas tienen sus propias reglas: plazos cortos, formatos del cliente, cuestionarios largos y poco margen para preguntar. Nos encargamos de ordenar todo eso para que el equipo solo aporte lo técnico.</p>
+  <div class="grid g3"><div class="card"><h3>Leer la RFP</h3><p>Qué pide el cliente, qué pesa en la decisión, qué formato exige y qué falta por aclarar. Preparamos las preguntas al cliente si hacen falta.</p></div><div class="card"><h3>Escribir la propuesta</h3><p>Enfoque, solución, equipo, plan de trabajo y casos de éxito, en el formato que pide el cliente y con vuestros materiales.</p></div><div class="card"><h3>Cuestionarios</h3><p>RFIs, cuestionarios de seguridad, cumplimiento y homologación de proveedores. Creamos una base de respuestas reutilizable para las siguientes.</p></div></div>
+</div></section>
+<section class="alt"><div class="wrap">
+  <p class="eyebrow">De dónde llegan</p><h2>La mayoría de RFPs privadas no se publican.</h2>
+  <ul class="rules"><li>Invitación directa de un cliente o de un integrador con el que ya trabajáis.</li><li>Portales de compras de grandes empresas, donde hay que estar dado de alta para recibir invitaciones.</li><li>Licitaciones privadas publicadas por empresas de energía, banca, telecomunicaciones o industria.</li><li>Convocatorias de innovación y ayudas que exigen una propuesta técnica.</li><li>Subcontratación de una parte de un contrato público ganado por una empresa mayor.</li><li>Ampliaciones y renovaciones con clientes actuales, que también piden propuesta formal.</li></ul>
+</div></section>
+<section><div class="wrap">
+  <p class="eyebrow">Cómo trabajamos</p><h2>Cinco pasos. En cada uno decides tú.</h2>
+  <div class="steps"><div class="step"><p class="k">1</p><h3>Recibimos la RFP</h3><p>Nos la reenvías con lo que tengáis: presentación, propuestas anteriores, CVs.</p></div><div class="step"><p class="k">2</p><h3>Lectura</h3><p>En pocos días, resumen de lo que pide el cliente, riesgos y preguntas.</p></div><div class="step"><p class="k">3</p><h3>Estructura</h3><p>Índice de la propuesta según los criterios del cliente. Lo apruebas antes de escribir.</p></div><div class="step"><p class="k">4</p><h3>Redacción</h3><p>Escribimos con tus materiales. El precio y las condiciones los fijas tú.</p></div><div class="step"><p class="k">5</p><h3>Entrega</h3><p>Propuesta final en el formato del cliente. La envías tú, en tu nombre.</p></div></div>
+  <div class="note"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2EA670" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v5M12 16h.01"/></svg><p>Además, os ayudamos a daros de alta como proveedores en los portales de las empresas que os interesan, para que os inviten a más RFPs. No prometemos que el cliente os elija: eso depende también del precio y de la relación. Lo que sí cuidamos es que la propuesta responda a todo lo que pide.</p></div>
+</div></section>
+<section class="alt"><div class="wrap">
+  <p class="eyebrow">FAQ</p><h2>Preguntas frecuentes</h2>
+  <div class="faq"><details><summary>¿Qué diferencia hay entre una RFP, una RFI y una RFQ?</summary><p>La RFI pide información para conocer proveedores. La RFP pide una propuesta completa: solución, equipo, plan y precio. La RFQ se centra sobre todo en el precio de algo ya definido. Ayudamos con las tres.</p></details><details><summary>¿Firmáis un acuerdo de confidencialidad?</summary><p>Sí, antes de ver nada. Muchas RFPs privadas obligan a confidencialidad con el cliente, y lo respetamos: no reutilizamos contenido entre clientes y borramos los materiales al cerrar cada oferta.</p></details><details><summary>¿Ponéis vosotros el precio?</summary><p>No. El precio y las condiciones comerciales los decidís vosotros. Podemos ayudar a presentar el desglose de forma clara, pero la decisión es vuestra.</p></details><details><summary>¿Con qué plazos trabajáis?</summary><p>Nos adaptamos al plazo del cliente. Cuanto antes nos llegue la RFP, más margen hay para preguntar al cliente y revisar versiones.</p></details><details><summary>¿También hacéis concursos públicos?</summary><p>Sí. Vigilamos la Plataforma de Contratación y portales autonómicos, analizamos pliegos y redactamos memorias técnicas.</p></details></div>
+  <p class="related">¿Buscáis a alguien que lleve todas vuestras ofertas? <a href="../bid-manager-externo/">Ver bid manager externo →</a></p>
+</div></section>
+<section id="empezar" class="final"><div class="wrap">
+  <p class="eyebrow">Próximo paso</p><h2>Empezamos con un caso real, sin coste.</h2><p class="sub">Si tenéis una RFP abierta o una que perdisteis hace poco, mandádnosla. Te devolvemos nuestra lectura y cómo la plantearíamos. Si te convence, acordamos cómo seguir.</p>
+  <div class="cta"><a class="btn btn-green" href="mailto:contacto@graubid.es">Escríbenos: contacto@graubid.es</a><a class="btn btn-ghost" href="https://www.linkedin.com/company/graubid/" target="_blank" rel="noopener">GrauBid en LinkedIn</a></div>
+</div></section>
+</main>
+<footer><div class="wrap"><span>© 2026 GrauBid · <a href="https://graubid.es/">graubid.es</a></span><span><a href="mailto:contacto@graubid.es">contacto@graubid.es</a> · <a href="https://www.linkedin.com/company/graubid/" target="_blank" rel="noopener">linkedin.com/company/graubid</a></span></div></footer>
+</body>
+</html>
